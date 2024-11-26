@@ -84,6 +84,7 @@ cc = username.lstrip()
 print(cc)
 print(len(cc))
 print("-=-------------------------------------------------------------------------------------------------")
+
 #replace 
 s = "hello wecome to world of Python"
 sp = s.replace(" ","")
