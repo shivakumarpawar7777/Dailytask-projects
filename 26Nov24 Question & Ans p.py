@@ -91,6 +91,20 @@ for char in string:
 print(result)
 print("------------------------------")
 
+#17. Python program to print the highest frequency character in a String.  
+
+s = "lerarnrirnrgr"
+print(s.count("g"))
+d = {}
+for char in s:
+    if char in d:
+        d[char] += 1
+    else:
+        d[char] =1
+print(max(d.values()))
+print(max(d, key=d.get))
+print("------------------------------")
+
 
 #21. Python program to calculate sum of integers in string.  
 str = input("Enter a string: ")
@@ -126,9 +140,13 @@ print("------------------------------")"""
 
 #16. Python program to count the Occurrence Of Vowels & Consonants in a String.  
 
-#17. Python program to print the highest frequency character in a String.  
 
+ 
 #18. Python program to Replace First Occurrence Of Vowel With ‘-‘ in String.  
+
+s = "hello wecome to world of Python"
+sp = s.replace("h","-")
+print(sp)
 
 #19. Python program to count alphabets, digits and special characters.  
 
