@@ -12,5 +12,4 @@ h = [1, 2, 3]
 elements_to_add = [4, 5, 6]
 for element in elements_to_add:
     h.append (element)
- 
 print(h)
