@@ -105,6 +105,39 @@ print(max(d.values()))
 print(max(d, key=d.get))
 print("------------------------------")
 
+#18. Python program to Replace First Occurrence Of Vowel With ‘-‘ in String.  
+s ="learning"
+us=""
+for char in s:
+    if char not in V:
+        us += char
+    elif "-" not in us:
+         us += "-"
+    elif char in V and "-" in us:
+        us += char
+print(us)  
+print("------------------------------")
+
+#19. Python program to count alphabets, digits and special characters.  
+s = "praveen@12345"
+dig = 0
+chrc = 0
+spch =0
+for char in s :
+    if char.isalpha() :
+        chrc = chrc+1
+    elif char.isdigit() :
+        dig = dig+1
+    else :
+        spch = spch +1
+ 
+print("charectors- ", chrc)
+print("digits -", dig)
+print("specialsymbals - ", spch)
+print("------------------------------")
+
+print("------------------------------")
+
 
 #21. Python program to calculate sum of integers in string.  
 str = input("Enter a string: ")
@@ -113,6 +146,25 @@ for i in str:
     if i.isdigit():
         sum = sum + int(i)
 print("Total sum in string : ", sum)
+print("------------------------------")
+
+or
+s = "praveen1234"
+count = 0
+for char in s:
+    if char.isdigit():
+        count = count + int(char)
+    else :
+        pass
+print(count)
+
+#22. Python program to print all non repeating character in string.  
+s =" welcome to my world"
+nc = ""
+for char in s:
+    if char not in nc:
+        nc = nc + char
+print(nc)
 print("------------------------------")
 
 #24. Python program to check given character is vowel or consonant. 
@@ -136,24 +188,15 @@ print(z.isdigit())
 print("------------------------------")"""
 
 
-
-
 #16. Python program to count the Occurrence Of Vowels & Consonants in a String.  
-
-
- 
-#18. Python program to Replace First Occurrence Of Vowel With ‘-‘ in String.  
-
-s = "hello wecome to world of Python"
-sp = s.replace("h","-")
-print(sp)
-
-#19. Python program to count alphabets, digits and special characters.  
 
 #20. Python program to check given character is digit or not using isdigit() method.  
 
-#22. Python program to print all non repeating character in string.  
- 
-#23. Python program to copy one string to another string.  
+#Python program to check given character is digit or not  without using isdigit() method.
+##18.Python program to Replace last Occurrence Of Vowel With ‘-‘ in String.
+#python program to find index values of a mid charector
+"""learning" > n
+"praveen"  > v"""
 
+#23. Python program to copy one string to another string.  
 
