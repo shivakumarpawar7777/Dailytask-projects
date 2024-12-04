@@ -1,7 +1,7 @@
 """#1. Python Program to count occurrence of a given characters in string.  
 name = "qwertyuiopasdfghjklzxsjdgfiuenkjsdiueyfqiwfnchjfiayfcvbnmplmoknuhvygvtfcrdxesxqazsdfghjgfxcvbjgf"
 print(name.count("f")) # to find a perticulau characters how many times available.
-print("------------------------------")
+print("---------------1---------------")
 
 #2. Python Program to check if two Strings are Anagram.
 a = input("enter the first string: ")
@@ -10,7 +10,7 @@ if sorted(a) == sorted(b):
     print("both strings are anagram")
 else:
     print("not anagram")  
-print("------------------------------")
+print("--------------2----------------")
 
 #3. Python program to check a String is palindrome or not. 
 z = input("Enter a string: ") 
@@ -19,24 +19,26 @@ if revstr == z:
     print("palindrome")
 else:
     print("Not palindrome")
-print("------------------------------")
+print("----------------3--------------")
 
 #4. Python program to replace the string space with a given character.  
 s = "hello wecome to world of Python"
 sp = s.replace("Python","java")
 print(sp)
+print("-----4-------------------------")
 
 #5. Python program to replace the string space with a given character using replace() method.  
 s = "hello wecome to world of Python"
 sp = s.replace("Python","java")
 print(sp)
-print("------------------------------")
+print("-----------5-------------------")
  
 #6. Python program to convert lowercase char to uppercase of string. 
 z = "Hello wecome to world of Python"  
 print(z.upper())
 print(z.isupper())
-print("------------------------------")
+print("----------------6--------------")
+
 #7. Python program to convert lowercase vowel to uppercase in string.  
 s = input("Enter a string: ")
 res = 'aeiou'
@@ -45,78 +47,79 @@ for i in s:
         upr = i.upper()
         str = s.replace(i, upr)
 print("After converting : ", str) 
+print("-=--------------------7-----------------------------------------------------------------------------")
 
 #8. Python program to separate characters in a given string.  
 string = "hello"
 a = list(string)
 print(a)
-print("-=-------------------------------------------------------------------------------------------------")
+print("-=------------------------------8-------------------------------------------------------------------")
 
 #9. Python program to remove blank space from string. 
-username = " ramkumar "
-print(len(username))    # to find out the user length 
-cc = username.lstrip()
-print(cc)
-print(len(cc))
-print("-=-------------------------------------------------------------------------------------------------")
+a = "wellcome to my world"
+aa = a.replace (" ","")
+print(aa)
+print("-=-------------9------------------------------------------------------------------------------------")
 
 #10. Python program to concatenate two strings using join() method.  
-strings = ["Hello", "World"]
-a = " ".join(strings)
-print(a)  
-print("----------------------------")
+a = "Python" 
+s = "program"
+print(" ".join([a,s])) 
+print("------------------10----------")
 
 #11. Python program to concatenate two strings without using join() method.  
 s1 = "Hello"
 s2 = "World"
 z = s1 + " " + s2
 print(z)
-print("-=-------------------------------------------------------------------------------------------------")
+print("-=------------------------11------------------------------------------------------------")
 
 #12. Python program to remove repeated character from string.  
 a = {1,2,3,4,5,6,6,5,4,2} 
 print(list(set(a))) 
 print("The type of data",type(a)) 
-print("------------------------------")
+print("---------12---------------------")
+
+#13 = 24
+#14 = 25 
 
 #15. Python program to delete vowels in a given string.  
-string = input("Enter a string: ")
-vowels = "aeiouAEIOU"
-
+string = "PrepInsta"
+vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 result = ""
+for i in range(len(string)):
+    if string[i] not in vowels:
+        result = result + string[i]
+print("\nAfter removing Vowels: ", result)
+print("----------15--------------------")
 
-for char in string:
-    if char not in vowels:
-        result += char
-print(result)
-print("------------------------------")
+#16. Python program to count the Occurrence Of Vowels & Consonants in a String.  
+str1 = input("Please Enter Your Own String : ")
+vowels = 0
+consonants = 0
+
+for i in str1:
+    if(i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u'
+       or i == 'A' or i == 'E' or i == 'I' or i == 'O' or i == 'U'):
+        vowels = vowels + 1
+    else:
+        consonants = consonants + 1
+print("Total Number of Vowels in this String = ", vowels)
+print("Total Number of Consonants in this String = ", consonants)
+print("-----------16-------------------")
 
 #17. Python program to print the highest frequency character in a String.  
 
-s = "lerarnrirnrgr"
-print(s.count("g"))
-d = {}
-for char in s:
-    if char in d:
-        d[char] += 1
-    else:
-        d[char] =1
-print(max(d.values()))
-print(max(d, key=d.get))
-print("------------------------------")
+a = "GeeksforGeeks"
+s = max(a, key=lambda x: a.count(x))
+print(s)
+print("-----------17-------------------")
 
 #18. Python program to Replace First Occurrence Of Vowel With ‘-‘ in String.  
-s ="learning"
-us=""
-for char in s:
-    if char not in V:
-        us += char
-    elif "-" not in us:
-         us += "-"
-    elif char in V and "-" in us:
-        us += char
-print(us)  
-print("------------------------------")
+s = "An apple A day keeps doctor Away."
+s = s.replace('a', '$')
+print(s)
+print("-----------18-------------------")
 
 #19. Python program to count alphabets, digits and special characters.  
 s = "praveen@12345"
@@ -134,10 +137,15 @@ for char in s :
 print("charectors- ", chrc)
 print("digits -", dig)
 print("specialsymbals - ", spch)
-print("------------------------------")
+print("---------19---------------------")
 
-print("------------------------------")
+#20. Python program to check given character is digit or not using isdigit() method.  
+s = "12345"
+print(s.isdigit())  
 
+s2 = "1234a5"
+print(s2.isdigit())
+print("--------------20----------------")
 
 #21. Python program to calculate sum of integers in string.  
 str = input("Enter a string: ")
@@ -146,7 +154,7 @@ for i in str:
     if i.isdigit():
         sum = sum + int(i)
 print("Total sum in string : ", sum)
-print("------------------------------")
+print("--------------21----------------")
 
 or
 s = "praveen1234"
@@ -157,24 +165,36 @@ for char in s:
     else :
         pass
 print(count)
+print("-----------21-------------------")
 
 #22. Python program to print all non repeating character in string.  
-s =" welcome to my world"
-nc = ""
-for char in s:
-    if char not in nc:
-        nc = nc + char
-print(nc)
-print("------------------------------")
+S = "Ppyytthhoonn"
+for i in S:
+    count = 0
+    for j in S:
+        if i == j:
+            count+=1
+        if count > 1:
+            break
+    if count == 1:
+        print(i,end = " ")
+print("--------------22----------------")
+
+#23. Python program to copy one string to another string.  
+s = input("Please Enter Your Own String : ")
+a = s
+r = s[:]
+print("The Final String : a  = ", a)
+print("The Final String : r  = = ", r)
+print("-------------23-----------------")
 
 #24. Python program to check given character is vowel or consonant. 
-name = input("Enter your letter: ")
-name = name.lower()
-if (name == "a" or name == "e" or name == "i" or name == "o" or name == "u"):
-    print("it is a vowel")
-else:
-    print("consonant")
-print("------------------------------")
+l = ['a', 'e', 'i', 'o', 'c'] 
+if chr in l: 
+	print(chr, "is a vowel") 
+else: 
+	print(chr, "is a consonant")
+print("---------------#13 = 24---------------")
 
 #25. Python program to check given character is digit or not.
 z = "1234567890"   
@@ -185,18 +205,5 @@ print(z.isdigit())
 
 z = "asdfghjk"   
 print(z.isdigit()) 
-print("------------------------------")"""
-
-
-#16. Python program to count the Occurrence Of Vowels & Consonants in a String.  
-
-#20. Python program to check given character is digit or not using isdigit() method.  
-
-#Python program to check given character is digit or not  without using isdigit() method.
-##18.Python program to Replace last Occurrence Of Vowel With ‘-‘ in String.
-#python program to find index values of a mid charector
-"""learning" > n
-"praveen"  > v"""
-
-#23. Python program to copy one string to another string.  
+print("----------------#14 = 25 --------------")"""
 
