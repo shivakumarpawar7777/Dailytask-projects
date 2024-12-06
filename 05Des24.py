@@ -41,7 +41,7 @@ print("orginal :",a)
 a.insert(1,22)
 print("after insert :",a)
 
-# Extends the list with another list of numbers.
+#4.Extends the list with another list of numbers.
 print("Extends the list with another list of numbers")
 a = [10,20,30]
 b = [50,60]
@@ -49,22 +49,22 @@ print("orginal list :",a ,b)
 a.extend(b)
 print("using extends list :",a)
 
-# Remove all occurrences of the number 3 from a list of integers.
+#5. Remove all occurrences of the number 3 from a list of integers.
 print("remove all number 3 in list")
 a = (1,2,3,4,6,7,3,8,9,)
 print("orginal list :",a)
 a = [i for i in a if i != 3]
 print("remove 3 :",a)
 
-# Write a Python program to remove the last element of a list using pop() and print the updated list.
+# 6.Write a Python program to remove the last element of a list using pop() and print the updated list.
 print(" remove the last element of a list using pop() and print")
 s = [ 1,2,3,4]
 print("orginal list",s)
 s.pop(-1)
 print("using pop :",s)
 
-# Sorting and Reversing Lists:
-# Write a Python program to sort a list of 10 random integers in ascending and descending order using sort() and reverse().
+#3. Sorting and Reversing Lists:
+#1.Write a Python program to sort a list of 10 random integers in ascending and descending order using sort() and reverse().
 print(" sort a list of 10 random integers in ascending and descending order using sort() and reverse()")
 a = [1,2,3,5,7,-1,-2,8,0]
 print("orginal value :" ,a)
@@ -72,8 +72,9 @@ a.sort()
 print("ascending order :",a)
 a.reverse()
 print("descending order :",a)
+4. Aliasing and Cloning:
 
-# Create a list of strings and reverse the order of elements using both reverse() and slicing [::-1]. Compare the results.
+#2.Create a list of strings and reverse the order of elements using both reverse() and slicing [::-1]. Compare the results.
 print("reverse the order of elements using both reverse() and slicing [::-1]")
 b = [1,2,3,4]
 print("orginal list :",b)
@@ -83,8 +84,7 @@ a = b[::-1]
 print("usung slicing :",b)
 
 # Aliasing and Cloning:
-'''1.Create a list of numbers. Assign the list to another variable and modify the original list. Check if the second list also changes.
-Then, create a copy of the original list and show that modifying the copy does not affect the original list.'''
+#1.Create a list of numbers. Assign the list to another variable and modify the original list. Check if the second list also changes. Then, create a copy of the original list and show that modifying the copy does not affect the original list.
 print("create a list and copy and modify")
 orginal_list = [  1,2,3,4,5  ]
 second_list = orginal_list
@@ -96,8 +96,7 @@ modifyed_list.append(7)
 print("orginal_list after modifying :",orginal_list)
 print("modifyed_list :",modifyed_list)
  
-# Write a Python program to demonstrate how changes in a list's alias affect both lists, while changes in a cloned list do not.
-
+#2.Write a Python program to demonstrate how changes in a list's alias affect both lists, while changes in a cloned list do not.
 # Original list
 original_list = [1, 2, 3, 4, 5]
 alias_list = original_list
@@ -108,9 +107,8 @@ print("Original list after modification via alias:", original_list)
 print("Alias list after modification:", alias_list)
 print("Cloned list after modification:", cloned_list)
 
-# Mathematical Operations:
-# Create two lists of numbers and use the + operator to concatenate them.Then use the * operator to repeat the elements of one list 3times
-
+#5. Mathematical Operations:
+#1.Create two lists of numbers, and use the + operator to concatenate them. Then, use the * operator to repeat the elements of one list 3 times.
 print("create 2 lists using +,* operators")
 a = ("welcome ")
 b = (" my program")
@@ -119,13 +117,13 @@ print("using + operator:", s)
 s = a*3
 print("using * operator :", s)
 
-# Given a list of numbers write a Python program to create a new list where each element is doubled  each element is multiplied by 2)
+#2.Given a list of numbers, write a Python program to create a new list where each element is doubled (i.e., each element is multiplied by 2).
 s = [1,2,3,4,5]
 print("orginal list :",)
 double = [x * 2 for x in s]
 print("after doubled and %2 :",double)
 
-# Membership Operators:
+#6. Membership Operators:
 # Write a Python program to check if a specific element (e.g., 5) exists in a given list using the in operator. If it exists, print its position; otherwise, print "Element not found."
 print("check the position of given number")
 a = [1,2,3,4,5,6]
@@ -187,24 +185,6 @@ print("Sorted list by age:", sorted_people)
 
 
 
-3.Create a list of numbers from 1 to 10. Use slicing to print the first three numbers, the last three numbers, and every second number in the list.
-2. Adding and Removing Elements:
-1.Write a Python program that initializes a list with some numbers and:
-2.Adds a new number to the list using the append() method.
-3.Inserts a number at the second position using insert().
-4.Extends the list with another list of numbers.
-5.Remove all occurrences of the number 3 from a list of integers.
-6.Write a Python program to remove the last element of a list using pop() and print the updated list.
-3. Sorting and Reversing Lists:
-1.Write a Python program to sort a list of 10 random integers in ascending and descending order using sort() and reverse().
-2.Create a list of strings and reverse the order of elements using both reverse() and slicing [::-1]. Compare the results.
-4. Aliasing and Cloning:
-1.Create a list of numbers. Assign the list to another variable and modify the original list. Check if the second list also changes. Then, create a copy of the original list and show that modifying the copy does not affect the original list.
-2.Write a Python program to demonstrate how changes in a list's alias affect both lists, while changes in a cloned list do not.
-5. Mathematical Operations:
-1.Create two lists of numbers, and use the + operator to concatenate them. Then, use the * operator to repeat the elements of one list 3 times.
-2.Given a list of numbers, write a Python program to create a new list where each element is doubled (i.e., each element is multiplied by 2).
-6. Membership Operators:
 1.Write a Python program to check if a specific element (e.g., 5) exists in a given list using the in operator. If it exists, print its position; otherwise, print "Element not found."
 Given a list of student names, check if "John" and "Sara" are in the list using the in operator.
 7. Nested Lists:
