@@ -124,7 +124,7 @@ double = [x * 2 for x in s]
 print("after doubled and %2 :",double)
 
 #6. Membership Operators:
-# Write a Python program to check if a specific element (e.g., 5) exists in a given list using the in operator. If it exists, print its position; otherwise, print "Element not found."
+1. Write a Python program to check if a specific element (e.g., 5) exists in a given list using the in operator. If it exists, print its position; otherwise, print "Element not found."
 print("check the position of given number")
 a = [1,2,3,4,5,6]
 s = 5
@@ -135,7 +135,7 @@ if s in a :
 else : 
  print("element is not found")
 
-# Given a list of student names, check if "John" and "Sara" are in the list using the in operator.
+2. Given a list of student names, check if "John" and "Sara" are in the list using the in operator.
 name = ["raju","john","deva","sara","pinky "]
 if "john" in name :
   print("john is in name.")
@@ -146,15 +146,16 @@ if "sara" in name :
 else :
   print("sara is not in name.")
 
-# Nested Lists:
-# Write a Python program to create a 3x3 matrix (nested list) and print the matrix. Then, access and print the element at row 2, column 3.
+# 7. Nested Lists:
+#1. Write a Python program to create a 3x3 matrix (nested list) and print the matrix. Then, access and print the element at row 2, column 3.
 a = [[2,3,4],[3,4,5],[7,8,9]]
 print("3*3 matrix :")
 for row in a :
  print(row)
 element = a[1][2] 
 print("elements" ,element)
-# Create a nested list representing a list of students' names and their respective grades. Write a Python program to print each student's name along with their grade.
+
+#2. Create a nested list representing a list of students' names and their respective grades. Write a Python program to print each student's name along with their grade.
 student_grades =[["sai", 85],["ravi", 95],["pavan", 97],["deva", 85]]
 for student in student_grades :
   name = student[0]
@@ -183,16 +184,3 @@ people = [("vijay", 30), ("deva", 25), ("pavan", 35), ("vamsi", 20)]
 sorted_people = sorted(people, key=lambda person: person[1])
 print("Sorted list by age:", sorted_people)
 
-
-
-1.Write a Python program to check if a specific element (e.g., 5) exists in a given list using the in operator. If it exists, print its position; otherwise, print "Element not found."
-Given a list of student names, check if "John" and "Sara" are in the list using the in operator.
-7. Nested Lists:
-1.Write a Python program to create a 3x3 matrix (nested list) and print the matrix. Then, access and print the element at row 2, column 3.
-2.Create a nested list representing a list of students' names and their respective grades. Write a Python program to print each student's name along with their grade.
-8. Advanced Challenges:
-1.Create a list of numbers from 1 to 20. Write a Python program to generate two separate lists:
-One containing only the even numbers.
-Another containing only the odd numbers.
-2.Write a Python program that reads a list of integers and returns a new list containing only the unique elements (i.e., removing duplicates).
-Given a list of tuples representing (name, age), sort the list by age in ascending order.
