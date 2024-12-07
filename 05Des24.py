@@ -15,7 +15,7 @@ print("print fourth element :",s[4])
 
 #3.Create a list of numbers from 1 to 10. Use slicing to print the first three numbers, the last three numbers, and every second number in the list.
 
-##2. Adding and Removing Elements:
+# Adding and Removing Elements:
 #1.Write a Python program that initializes a list with some numbers and:
 print("Write a Python program that initializes a list with some numbers and add and remove")
 print('adding elements')
@@ -63,7 +63,7 @@ print("orginal list",s)
 s.pop(-1)
 print("using pop :",s)
 
-#3. Sorting and Reversing Lists:
+# Sorting and Reversing Lists:
 #1.Write a Python program to sort a list of 10 random integers in ascending and descending order using sort() and reverse().
 print(" sort a list of 10 random integers in ascending and descending order using sort() and reverse()")
 a = [1,2,3,5,7,-1,-2,8,0]
@@ -72,7 +72,6 @@ a.sort()
 print("ascending order :",a)
 a.reverse()
 print("descending order :",a)
-4. Aliasing and Cloning:
 
 #2.Create a list of strings and reverse the order of elements using both reverse() and slicing [::-1]. Compare the results.
 print("reverse the order of elements using both reverse() and slicing [::-1]")
@@ -97,6 +96,7 @@ print("orginal_list after modifying :",orginal_list)
 print("modifyed_list :",modifyed_list)
  
 #2.Write a Python program to demonstrate how changes in a list's alias affect both lists, while changes in a cloned list do not.
+
 # Original list
 original_list = [1, 2, 3, 4, 5]
 alias_list = original_list
@@ -124,7 +124,7 @@ double = [x * 2 for x in s]
 print("after doubled and %2 :",double)
 
 #6. Membership Operators:
-1. Write a Python program to check if a specific element (e.g., 5) exists in a given list using the in operator. If it exists, print its position; otherwise, print "Element not found."
+#1. Write a Python program to check if a specific element (e.g., 5) exists in a given list using the in operator. If it exists, print its position; otherwise, print "Element not found."
 print("check the position of given number")
 a = [1,2,3,4,5,6]
 s = 5
@@ -135,7 +135,7 @@ if s in a :
 else : 
  print("element is not found")
 
-2. Given a list of student names, check if "John" and "Sara" are in the list using the in operator.
+#2. Given a list of student names, check if "John" and "Sara" are in the list using the in operator.
 name = ["raju","john","deva","sara","pinky "]
 if "john" in name :
   print("john is in name.")
@@ -173,7 +173,7 @@ odd_number =[num for num in number if num %2 != 0 ]
 print("even numbers :",even_number)
 print("odd numbers :",odd_number)
 
-# Write a Python program that reads a list of integers and returns a new list containing only the unique elements (i.e., removing duplicates).
+#.2 Write a Python program that reads a list of integers and returns a new list containing only the unique elements (i.e., removing duplicates).
 a = [1,3,2,3,2,7,5,5,6,6,7]
 print("orginal :",a)
 b = (list(set(a)))
