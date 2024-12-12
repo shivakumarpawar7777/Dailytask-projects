@@ -49,7 +49,9 @@ s1.pop()
 print(s1)
 print("---------------")
 
+
 # clear
 s1 = {"shiv", "rama", "praveen", "kishan"}
 s1.clear()
 print(s1)
+print("---------------")
