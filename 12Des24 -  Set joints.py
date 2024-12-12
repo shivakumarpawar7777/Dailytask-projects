@@ -46,3 +46,23 @@ print("-----------------------------")
 print(d)
 for i in d:
     print(i, d[i])
+
+"""no_products = 5
+products = {}
+for i in range (no_products):
+    key =input("Enter your key: ")
+    values = int(input("Enter your value: "))
+    products[key] = values
+print(products) """
+
+
+#python pm  to print sum of all the price ?
+no_products = 5
+products = {}
+for i in range (no_products):
+    key =input("Enter your key: ")
+    values = int(input("Enter your value: "))
+    products[key] = values
+    total_price = sum(products.values())
+print(products)    
+print("Total price:", total_price, products)
