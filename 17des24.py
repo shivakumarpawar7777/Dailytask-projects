@@ -6,9 +6,10 @@ set = {}
 print(type(set))
 print(set)
 
-"""#Write program to iterate over sets.
-for element in set:
-    print("Iterate over element:", element)
+#Write program to iterate over sets.
+set = {'a', 'b', 'c', 'd'}
+for i in set:
+    print(i)
 
 #Write a Python program to add member to a set.
 set = {1, 2, 3, 4, 5}
@@ -150,5 +151,4 @@ for char in string1:
         char_count[char] += 1
     else:
         char_count[char] = 1
-print("char count in dictionary:",char_count)"""
-
+print("char count in dictionary:",char_count)
