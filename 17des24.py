@@ -71,7 +71,7 @@ set2={4,5,6,7,8}
 commom_elements = set1.intersection(set2)
 
 if element:
-    print("common elements exist:",commom_elements)
+    print("common elements exist:", commom_elements)
 else:
     print("No common elements")
 
@@ -79,7 +79,7 @@ else:
 set1={1,2,3,4,5}
 set2={4,5,6,7,8}
 common_items = set1.union(set2)
-print("updated sets:",common_items)
+print("updated sets:", common_items)
 
 #Remove items from set1 that are not common to both set1 and set2?
 set1={1,2,3,4,5}
@@ -90,14 +90,14 @@ print("Not Common:",commom_elements)
 #Write a python program to  add a key to a dictionary ?
 dict = {"name" :"ravi", "age" :25}
 dict["city"]="hyd"
-print("After add key to dictionary:",dict)
+print("After add key to dictionary:", dict)
 
 #Write a python program to check weather the given value is present in the dictionary or not ?
 dict = {'name': 'ravi', 'age': 25, 'city': 'hyd'}
 value = "ravi"
 
 if value in dict.values():
-    print("value present in dictionary:",value)
+    print("value present in dictionary:", value)
 else:
     print("value not present in dictionary")
     
@@ -135,11 +135,11 @@ for key, value in dict2.items():
 print("Combined Dictionary:", combined_dict)
 
 #Write a python program to merge two python dictionaries ?
-dict1 = {"a": 10, "b": 20}
-dict2 = {"b": 30, "c": 40}
+dictionaries1= {"a": 10, "b": 20}
+dictionaries2 = {"b": 30, "c": 40}
 
-dict1.update(dict2)
-print("Merged Dictionary:", dict1)
+dictionaries1.update(dictionaries2)
+print("Merged Dictionary:", dictionaries1)
 
 #Write a Python program to create a dictionary from a string.  Note: Track the count of the letters from the string.
 #Sample string : 'skywavessoftwares'
