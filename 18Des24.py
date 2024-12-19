@@ -116,5 +116,14 @@ print(common_elements)  # [4, 5]
 print("-----------")
 
 # 11.Write a function `reverse_string` that takes a string as input and returns the string reversed.
+def reverse_string(n):
+    return n[::-1]
+print(reverse_string("Shivakumar"))
 
 # 12.Write a function `sort_dict_by_value` that takes a dictionary as input and returns a list of tuples sorted by the dictionary values in ascending order.
+def sort_dict_by_value(d): 
+    return sorted(d.items(), key=lambda x: x[1]) 
+
+print(sort_dict_by_value({'a': 3, 'b': 1, 'c': 2})) 
+print(sort_dict_by_value({'x': 10, 'y': 30, 'z': 20})) 
+print(sort_dict_by_value({'apple': 5, 'banana': 2, 'cherry': 8}))
