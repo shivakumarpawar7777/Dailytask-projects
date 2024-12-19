@@ -112,3 +112,15 @@ def greet(name, msg):
 name = "Shivakumr pawar"
 msg = "Good morning"
 greet(name,msg)  # greet(name=name, msg=msg)
+print("-----------")
+
+def greet(name, msg = "Good morning"):
+    print("Hi", name, msg)
+
+name = "Shivakumr pawar"
+msg = "Good evening"
+greet(name=name, msg=msg)
+
+def sum(a,b):
+    return a+b
+print(sum(100,200))
