@@ -1,21 +1,21 @@
-"""Function in python
+#Function in python
 #Function :- block of code excecutes whenever we call it. (reused block code)
 
 #Arguments:- information or data passed to the function as a arguments , which specifies after function name.
 
 S = input("enter your string: ")   
 re = s.replace(" ", "$")                     
-"""
-# Besic syntax of function
-"""def functionname (formala argument):
-    pass
-functionname(actual argument)"""
 
-"""def space_replece(s):
+# Besic syntax of function
+def functionname (formala argument):
+    pass
+functionname(actual argument)
+
+def space_replece(s):
     rs = s.replace(" ", "$")   
     print(rs)
 S = input("Enter your input hare: ")
-space_replece(s)    """
+space_replece(s)   
 
 # python function to print even as a list?
 
