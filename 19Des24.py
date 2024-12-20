@@ -7,9 +7,9 @@ S = input("enter your string: ")
 re = s.replace(" ", "$")                     
 
 # Besic syntax of function
-def functionname (formala argument):
+"""def functionname (formala argument):
     pass
-functionname(actual argument)
+functionname(actual argument)"""
 
 def space_replece(s):
     rs = s.replace(" ", "$")   
